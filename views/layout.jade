@@ -1,0 +1,41 @@
+!!!
+html
+  head
+    title Poesía colaborativa
+    link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/ui-lightness/jquery-ui-1.8.20.custom.css')
+    link(href='http://fonts.googleapis.com/css?family=Londrina+Sketch',rel='stylesheet',type='text/css')
+    script(src='/lib/bootstrap/js/bootstrap.min.js')
+    script(src='/javascripts/jquery-1.7.2.min.js')
+    script(src='/javascripts/jquery-ui-1.8.20.custom.min.js')
+    script(src="/socket.io/socket.io.js")
+    style
+      div {width: auto; height: auto;}
+    script
+      var socket = io.connect('http://localhost/'); 
+      socket.on('mover', function (d) {
+        $("#"+(d.id)).css("left", d.data.x);
+        $("#"+(d.id)).css("top", d.data.y);
+      });
+      
+      $(function() {
+        $( ".draggable" ).draggable({
+          drag: function()
+          {
+            var data = Object();
+            data.id = $(this).data('id');
+            data.pos = $(this).position();
+            
+            socket.emit('mover', {data: data });
+          }
+        })
+      });
+  body
+
+  include topbar
+
+  div.container
+    block content
+    

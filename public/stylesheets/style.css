@@ -1,0 +1,38 @@
+body {
+	background: url(/images/cuaderno.png);
+  	font: 14px Helvetica, Arial, sans-serif;
+}
+
+a {
+  	color: #00B7FF;
+}
+
+.draggable { 
+	background: #FFF;
+	box-shadow: 1px 1px 5px #777; 
+	color: #666;
+	cursor: pointer;
+	font-family: 'Londrina Sketch', cursive !important;
+	font-size: 2em;
+	cursor: pointer;
+	width: auto; 	
+	padding: 0px 8px;
+	text-align: center; 
+	float: left;
+}
+
+.container{
+	overflow: hidden;
+}
+
+a.brand{
+	color: #FFF !important;
+}
+
+.footer{
+	bottom: 0;
+	padding-left:50px;
+	position: absolute;
+}
+
+
