@@ -64,6 +64,16 @@ palabras = [
   new Palabra "los",rand(), rand()
   new Palabra "frío",rand(), rand()
   new Palabra "de",rand(), rand()
+  new Palabra "del",rand(), rand()
+  new Palabra "eres",rand(), rand()
+  new Palabra "mentira",rand(), rand()
+  new Palabra "la",rand(), rand()
+  new Palabra "cualquier",rand(), rand()
+  new Palabra "!",rand(), rand()
+  new Palabra "?",rand(), rand()
+  new Palabra "hacer",rand(), rand()
+  new Palabra "el",rand(), rand()
+
 ]
 
 # Rutas
