@@ -41,7 +41,7 @@
     });
   });
 
-  server = app.listen(3000);
+  server = app.listen(18118);
 
   io = require('socket.io').listen(server);
 
@@ -58,6 +58,6 @@
     });
   });
 
-  console.log("Servidor escuchando en el puerto 3000");
+  console.log("Servidor escuchando en el puerto 18118");
 
 }).call(this);
