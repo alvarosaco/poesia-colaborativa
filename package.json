@@ -1,7 +1,7 @@
 {
   "name": "Poesía colaborativa",
   "slug": "poesia-colaborativa",
-  "author": "Alvaro Saco <hola@alvarosaco.es>"
+  "author": "Alvaro Saco <hola@alvarosaco.es>",
   "version": "0.0.1",
   "private": true,
   "node":"0.6.17",
@@ -11,6 +11,6 @@
   "dependencies": {
     "express": "3.0.0alpha1",
     "jade": "*",
-    "socket.io": "*",
+    "socket.io": "*"
   }
 }
