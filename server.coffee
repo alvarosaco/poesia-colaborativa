@@ -18,7 +18,7 @@ app.configure 'development', () ->
   app.use express.errorHandler()
   
 rand = require './rand'
-  
+
 palabras = [
   new Palabra "amor",rand(), rand()
   new Palabra "la",rand(), rand()
@@ -70,19 +70,27 @@ palabras = [
 app.get '/', (req,res) ->
   res.render 'index', { palabras: palabras }
 
+app.get '/acerca', (req,res) ->
+  res.render 'acerca', { slug: "acerca" }
 
+# Puerto de escucha del servidor
 server = app.listen 3000
 
 # socket.io
 io = require('socket.io').listen server
 io.set 'log level', 1 # Establece el nivel de detalle del log del servidor
 
-io.sockets.on 'connection', (socket) ->
-  
+# Se define la conexión socket
+io.sockets.on 'connection', (socket) ->  
+
+  # Cuando el cliente emite "mover", el servidor escucha y ejecuta
   socket.on 'mover', (d) -> 
     palabras[d.data.id].x = d.data.pos.left
     palabras[d.data.id].y = d.data.pos.top
-    # Envía un mensaje broadcast a todos los clientes con la información de la palabra movida
-    socket.broadcast.emit 'mover', {data: palabras[d.data.id], id: d.data.id} 
+    # Envía un mensaje broadcast a todos los clientes
+    # para que ejecuten "mover" con la información de la palabra movida
+    # pasada en los parámetros
+    socket.broadcast.emit 'mover', {data: palabras[d.data.id], id: d.data.id}   
 
-console.log "Servidor express escuchando en el puerto 3000"
+# Envío de mensaje a la consola o terminal
+console.log "Servidor escuchando en el puerto 3000"

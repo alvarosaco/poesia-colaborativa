@@ -25,6 +25,10 @@ a {
 	overflow: hidden;
 }
 
+.main{
+	margin-top:80px;
+}
+
 a.brand{
 	color: #FFF !important;
 }

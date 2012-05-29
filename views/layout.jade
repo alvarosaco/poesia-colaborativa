@@ -13,13 +13,15 @@ html
     script(src="/socket.io/socket.io.js")
     style
       div {width: auto; height: auto;}
+    // Cliente 
     script
-      var socket = io.connect('http://localhost/'); 
+      var socket = io.connect('http://192.168.17.19/');       
+
       socket.on('mover', function (d) {
         $("#"+(d.id)).css("left", d.data.x);
         $("#"+(d.id)).css("top", d.data.y);
       });
-      
+            
       $(function() {
         $( ".draggable" ).draggable({
           drag: function()

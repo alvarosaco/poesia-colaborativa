@@ -35,6 +35,12 @@
     });
   });
 
+  app.get('/acerca', function(req, res) {
+    return res.render('acerca', {
+      slug: "acerca"
+    });
+  });
+
   server = app.listen(3000);
 
   io = require('socket.io').listen(server);
@@ -52,6 +58,6 @@
     });
   });
 
-  console.log("Servidor express escuchando en el puerto 3000");
+  console.log("Servidor escuchando en el puerto 3000");
 
 }).call(this);
