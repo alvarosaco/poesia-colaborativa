@@ -74,7 +74,7 @@ app.get '/acerca', (req,res) ->
   res.render 'acerca', { slug: "acerca" }
 
 # Puerto de escucha del servidor
-server = app.listen 3000
+server = app.listen 18118
 
 # socket.io
 io = require('socket.io').listen server
@@ -93,4 +93,4 @@ io.sockets.on 'connection', (socket) ->
     socket.broadcast.emit 'mover', {data: palabras[d.data.id], id: d.data.id}   
 
 # Envío de mensaje a la consola o terminal
-console.log "Servidor escuchando en el puerto 3000"
+console.log "Servidor escuchando en el puerto 18118"
