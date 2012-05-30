@@ -70,7 +70,6 @@ palabras = [
   new Palabra "hacer",rand(), rand()
   new Palabra "el",rand(), rand()
   new Palabra "lleno",rand(), rand()
-
 ]
 
 # Rutas
