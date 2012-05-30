@@ -72,6 +72,11 @@ palabras = [
   new Palabra "lleno",rand(), rand()
   new Palabra "al",rand(), rand()
   new Palabra "volver",rand(), rand()
+  new Palabra "ahora",rand(), rand()
+  new Palabra "aquí",rand(), rand()
+  new Palabra "aire",rand(), rand()
+  new Palabra "al",rand(), rand()
+  new Palabra "en",rand(), rand()
 ]
 
 # Rutas
