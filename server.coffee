@@ -21,6 +21,7 @@ rand = require './rand'
 
 palabras = [
   new Palabra "amor",rand(), rand()
+  new Palabra "fluye",rand(), rand()
   new Palabra "al",rand(), rand()
   new Palabra "quietud",rand(), rand()
   new Palabra "la",rand(), rand()
@@ -47,8 +48,9 @@ palabras = [
   new Palabra "luz",rand(), rand()
   new Palabra "arándanos",rand(), rand()
   new Palabra "tu",rand(), rand()
+  new Palabra "viaje",rand(), rand()
   new Palabra "va",rand(), rand()
-  new Palabra "vacío",rand(), rand()
+  new Palabra "a",rand(), rand()
   new Palabra "como",rand(), rand()
   new Palabra "tiene",rand(), rand()
   new Palabra "a",rand(), rand()
@@ -91,9 +93,8 @@ palabras = [
   new Palabra "es",rand(), rand()
   new Palabra "cada",rand(), rand()
   new Palabra "un",rand(), rand()
-  new Palabra "cada",rand(), rand()
+  new Palabra "y",rand(), rand()
   new Palabra "mundo",rand(), rand()
-  new Palabra "verano",rand(), rand()
 
 ]
 
