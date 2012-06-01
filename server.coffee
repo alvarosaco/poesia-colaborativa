@@ -48,6 +48,7 @@ palabras = [
   new Palabra "arándanos",rand(), rand()
   new Palabra "tu",rand(), rand()
   new Palabra "va",rand(), rand()
+  new Palabra "vacío",rand(), rand()
   new Palabra "como",rand(), rand()
   new Palabra "tiene",rand(), rand()
   new Palabra "a",rand(), rand()
@@ -71,7 +72,6 @@ palabras = [
   new Palabra "hacer",rand(), rand()
   new Palabra "el",rand(), rand()
   new Palabra "nunca",rand(), rand()
-  new Palabra "lleno",rand(), rand()
   new Palabra "volver",rand(), rand()
   new Palabra "ahora",rand(), rand()
   new Palabra "aquí",rand(), rand()
@@ -90,6 +90,10 @@ palabras = [
   new Palabra "árbol",rand(), rand()
   new Palabra "es",rand(), rand()
   new Palabra "cada",rand(), rand()
+  new Palabra "un",rand(), rand()
+  new Palabra "cada",rand(), rand()
+  new Palabra "mundo",rand(), rand()
+  new Palabra "verano",rand(), rand()
 
 ]
 
