@@ -95,6 +95,7 @@ palabras = [
   new Palabra "un",rand(), rand()
   new Palabra "y",rand(), rand()
   new Palabra "mundo",rand(), rand()
+  new Palabra "bonjour",rand(), rand()
 
 ]
 

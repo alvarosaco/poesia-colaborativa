@@ -1,15 +1,8 @@
-# Poesía colaborativa | Colaborative poetry
+# Poesía colaborativa | Collaborative poetry
 
-This is a sample colaborative and interactive real-time node.js app with Socket.io, Express and Jade.
+This is a sample collaborative and interactive real-time node.js app with Socket.io, Express and Jade.
 
-## Technologies 
-
-* Node 
-* Express 
-* CoffeeScript
-* Jade 
-
-## Requirements
+## Technologies & Requirements
 
 * [NodeJs](http://nodejs.org)
 * [Express](http://expressjs.com)
@@ -47,13 +40,13 @@ node server.js
 
 ## About
 
-poesiacolaborativa is a sample colaborative and interactive node.js app for creating poetry in real-time with others.
+poesiacolaborativa is a sample collaborative and interactive node.js app for creating poetry in real-time with others.
 
 Enjoy your poetry time with others.
 
 
 ## License
-
+GPL
 
 ## Contribute
 
