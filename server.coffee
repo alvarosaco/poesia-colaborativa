@@ -31,11 +31,9 @@ palabras = [
   new Palabra "noche",rand(), rand()
   new Palabra "veces",rand(), rand()
   new Palabra "es",rand(), rand()
-  new Palabra "chance",rand(), rand()
+  new Palabra "inerte",rand(), rand()
   new Palabra "el",rand(), rand()
-  new Palabra "cielo",rand(), rand()
   new Palabra "mañana",rand(), rand()
-  new Palabra "vendaval",rand(), rand()
   new Palabra "miedo",rand(), rand()
   new Palabra "día",rand(), rand()
   new Palabra "el",rand(), rand()
@@ -57,9 +55,7 @@ palabras = [
   new Palabra "si",rand(), rand()
   new Palabra "soy",rand(), rand()
   new Palabra "no",rand(), rand()
-  new Palabra "risa",rand(), rand()
   new Palabra "hay",rand(), rand()
-  new Palabra "sol",rand(), rand()
   new Palabra "los",rand(), rand()
   new Palabra "frío",rand(), rand()
   new Palabra "de",rand(), rand()
@@ -88,8 +84,6 @@ palabras = [
   new Palabra "un",rand(), rand()
   new Palabra "y",rand(), rand()
   new Palabra "mundo",rand(), rand()
-  new Palabra "bonjour",rand(), rand()
-
 ]
 
 # Rutas
