@@ -1,16 +1,16 @@
 div.navbar.navbar-fixed-top
   div.navbar-inner
     div.container
-      a.brand(href="http://poesiacolaborativa.com") Poesía colaborativa
-
-      ul.nav          
+      a.brand(href="/") Poesía colaborativa
+      
+      ul.nav
           li
-            a(href="http://poesiacolaborativa.com/") Inicio
+            a(href="/") Inicio
           //li
             a(href="/nueva_palabra") Nueva palabra
           //li
             a(href="/guardar") Guardar
-          //li            
+          //li
             a(href="/idioma") Idioma
           li            
             a(href="/acerca") Acerca
@@ -19,5 +19,7 @@ div.navbar.navbar-fixed-top
         a.btn
           i.icon-user 
           |  Usuario demo
-            
-        
+        span.btn
+          i.icon-bullhorn
+          &nbsp;
+          span#onlinecount 0 

@@ -28,13 +28,17 @@ html
         })();
 
     script
-      var socket = io.connect('http://poesiacolaborativa.nodester.com/');
+      var socket = io.connect('/');
 
       socket.on('mover', function (d) {
         $("#"+(d.id)).css("left", d.data.x);
         $("#"+(d.id)).css("top", d.data.y);
       });
-            
+      
+      socket.on('onlinecount', function(n) {
+        $("#onlinecount").html(n);
+      });
+      
       $(function() {
         $( ".draggable" ).draggable({
           drag: function()
@@ -51,10 +55,5 @@ html
 
   include topbar
 
-  div.banner
-    img(src="/images/banner.png")
-
-
   div.container
     block content
-    

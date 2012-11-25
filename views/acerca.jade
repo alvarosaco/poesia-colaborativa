@@ -1,19 +1,6 @@
-html
-	head
-		title Poesía colaborativa | Acerca
-		meta(name='description', content='Una aplicación colaborativa e interactiva en tiempo real desarrollada con node.js, express, socket.io, jade y coffee-script.')
-		link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap.min.css')
-		link(rel='stylesheet', href='/lib/bootstrap/css/bootstrap-responsive.min.css')
-		link(rel='stylesheet', href='/stylesheets/style.css')
-		link(rel='stylesheet', href='/stylesheets/ui-lightness/jquery-ui-1.8.20.custom.css')
-		link(href='http://fonts.googleapis.com/css?family=Londrina+Sketch',rel='stylesheet',type='text/css')
-		script(src='/lib/bootstrap/js/bootstrap.min.js')
-		script(src='/javascripts/jquery-1.7.2.min.js')
-		script(src='/javascripts/jquery-ui-1.8.20.custom.min.js')
-		script(src="/socket.io/socket.io.js")
-	body
-	
-	include topbar	
+extends layout
+
+block content
 	div.container.main
 		div.hero-unit
 			h1 Poesía colaborativa

@@ -1,6 +1,9 @@
 extends layout
 
 block content
+  div.banner
+    img(src="/images/banner.png")
+  
   each palabra, i in palabras
     div(class="draggable ui-draggable",style="position: absolute; top: #{palabra.y}px; left: #{palabra.x}px;",data-id="#{i}",id="#{i}")
       = palabra.texto
