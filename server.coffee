@@ -100,9 +100,18 @@ server = app.listen 18118
 io = require('socket.io').listen server
 io.set 'log level', 1 # Establece el nivel de detalle del log del servidor
 
-# Se define la conexión socket
-io.sockets.on 'connection', (socket) ->  
 
+# Cantidad de usuarios conectados
+onlinecount = 0
+
+# Se define la conexión socket
+io.sockets.on 'connection', (socket) ->
+  onlinecount++
+  
+  # Envía la cantidad de usuarios conectados
+  socket.emit 'onlinecount', onlinecount
+  socket.broadcast.emit 'onlinecount', onlinecount
+  
   # Cuando el cliente emite "mover", el servidor escucha y ejecuta
   socket.on 'mover', (d) -> 
     palabras[d.data.id].x = d.data.pos.left
@@ -110,7 +119,11 @@ io.sockets.on 'connection', (socket) ->
     # Envía un mensaje broadcast a todos los clientes
     # para que ejecuten "mover" con la información de la palabra movida
     # pasada en los parámetros
-    socket.broadcast.emit 'mover', {data: palabras[d.data.id], id: d.data.id}   
+    socket.broadcast.emit 'mover', {data: palabras[d.data.id], id: d.data.id}
+  
+  socket.on 'disconnect', () ->
+    onlinecount--
+    socket.broadcast.emit 'onlinecount', onlinecount
 
 # Envío de mensaje a la consola o terminal
 console.log "Servidor escuchando en el puerto 18118"
