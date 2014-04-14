@@ -36,7 +36,7 @@ node server.js
 
 ## Thanks to
 
-* [Brendan Scarvell] (https://github.com/tehlulz) for being my guru.
+* [Brendan Scarvell] (https://github.com/bscarvell) for being my guru.
 
 ## About
 
