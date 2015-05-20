@@ -1,7 +1,7 @@
 {
   "name": "Poesía colaborativa",
   "slug": "poesia-colaborativa",
-  "author": "Alvaro Saco <hola@alvarosaco.es>",
+  "author": "Alvaro Saco <alvarosaco@gmail.com>",
   "version": "0.0.1",
   "private": true,
   "node":"0.6.17",
